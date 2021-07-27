@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ionic-react-unsplash-app",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}
