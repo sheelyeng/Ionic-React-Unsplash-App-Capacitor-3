@@ -87,6 +87,7 @@ const TabHome: React.FC = () => {
         {PhotosArr &&
           PhotosArr.map((photo: IPhoto, index) => (
             <AppCardItem
+              key={index}
               item={photo}
               showLoading={isLoadingPhotos}
               onUserPress={() => onUserPress(photo?.user?.username)}
@@ -107,7 +108,7 @@ const TabHome: React.FC = () => {
         </IonToolbar>
         <AppHomeSegment activeIndex={activeTab} onChange={setActiveTab} />
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent>
         <IonRefresher slot="fixed" onIonRefresh={doRefresh}>
           <IonRefresherContent></IonRefresherContent>
         </IonRefresher>

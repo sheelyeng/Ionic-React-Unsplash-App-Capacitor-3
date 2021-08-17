@@ -1,0 +1,28 @@
+.AppCollectionItem {
+  .PostHeader {
+    padding: 16px;
+  }
+
+  .InfoWrapper {
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      padding-bottom: 4px;
+      margin-bottom: 0px;
+      color: var(--ion-color-black);
+    }
+
+    p {
+      font-size: 14px;
+      margin-top: 4px;
+      margin-bottom: 4px;
+      color: #767676;
+    }
+  }
+  .TagWrapper {
+    padding-top: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
