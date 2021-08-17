@@ -1,0 +1,39 @@
+.AppCardItem {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  .ImageContainer {
+    height: 300px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .ReactionWrapper {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ion-button {
+      padding: 2px;
+      --padding-start: 8px;
+      --padding-end: 8px;
+      --border-radius: 8px;
+
+      ion-icon {
+        font-size: 24px;
+        color: #767676;
+      }
+    }
+  }
+}

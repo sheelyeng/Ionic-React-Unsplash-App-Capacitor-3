@@ -1,0 +1,68 @@
+.Landing {
+  ion-header {
+    --background: transparent;
+    ion-toolbar {
+      --background: transparent;
+    }
+  }
+
+  ion-content {
+    --background: url("../../assets/img/landing-unsplash.jpg") 0 0/100% 100%
+      no-repeat;
+  }
+
+  .SkipButton {
+    font-size: 14px;
+    color: var(--ion-color-white);
+    font-weight: 500;
+  }
+
+  .ContentContainer {
+    flex: 1;
+    flex-direction: column;
+    padding-top: 32px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    p {
+      margin-top: 14px;
+      color: var(--ion-color-white);
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  .FooterContainer {
+    height: 200px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    .ButtonViews {
+      padding-bottom: 8px;
+    }
+
+    .HaveAccountContainer {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      p {
+        font-size: 14px;
+        color: var(--ion-color-white);
+      }
+    }
+
+    .LoginButtonText {
+      padding-left: 6px;
+      font-size: 14px;
+      color: var(--ion-color-black);
+      font-weight: 600;
+    }
+  }
+}

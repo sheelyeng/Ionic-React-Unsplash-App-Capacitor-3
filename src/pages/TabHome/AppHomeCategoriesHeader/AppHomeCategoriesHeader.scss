@@ -1,0 +1,30 @@
+.AppHomeCategoriesHeader {
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+
+  .CategoryHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--ion-color-black);
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .CategorySubHeader {
+    padding-bottom: 8px;
+    p {
+      font-size: 12px;
+      font-weight: 500;
+      color: #999999;
+      text-transform: uppercase;
+    }
+  }
+}
