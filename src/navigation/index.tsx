@@ -5,6 +5,7 @@ import { Redirect, Route } from "react-router-dom";
 import { IonRouterOutlet } from "@ionic/react";
 import Landing from "../pages/Landing/Landing";
 import Tabs from "./tabs";
+import Topics from "../pages/Topics/Topics";
 
 export default function Router() {
   return (
@@ -15,6 +16,9 @@ export default function Router() {
         </Route>
         <Route path="/tabs">
           <Tabs />
+        </Route>
+        <Route path="/main/topics">
+          <Topics />
         </Route>
         <Route exact path="/">
           <Redirect to="/landing" />

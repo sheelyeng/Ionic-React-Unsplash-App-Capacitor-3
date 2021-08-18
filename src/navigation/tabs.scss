@@ -1,0 +1,16 @@
+.Tabs {
+  ion-tab-bar {
+    ion-tab-button {
+      --color: #999999;
+      --color-focused: var(--ion-color-black);
+      --color-selected: var(--ion-color-black);
+
+      ion-icon {
+        font-size: 28px;
+      }
+      ion-label {
+        font-weight: 500;
+      }
+    }
+  }
+}

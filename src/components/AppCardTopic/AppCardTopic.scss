@@ -1,0 +1,75 @@
+.AppCardTopic {
+  margin: 12px 0px;
+  margin-inline: 0;
+  border-radius: unset;
+  box-shadow: unset;
+
+  .CardImageContainer {
+    position: relative;
+    height: 110px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .FeatureView {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      z-index: 1;
+    }
+  }
+
+  .TopicCardHeader {
+    padding-bottom: 16px;
+
+    ion-label {
+      h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--ion-color-black);
+      }
+
+      p {
+        font-size: 15px;
+        font-weight: 400;
+        color: #767676;
+      }
+    }
+
+    ion-avatar {
+      border: 0.5px solid #ddd;
+    }
+  }
+
+  .TopicCardContent {
+    padding-top: 16px;
+  }
+
+  .TopicContribution {
+    ion-icon {
+      font-size: 18px;
+      color: #767676;
+      margin-inline: 0px 4px;
+    }
+    ion-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--ion-color-black);
+      margin-left: 8px;
+    }
+  }
+
+  ion-card-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 15px;
+    color: var(--ion-color-black);
+  }
+}

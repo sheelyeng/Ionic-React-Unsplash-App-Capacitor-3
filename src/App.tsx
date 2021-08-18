@@ -1,4 +1,4 @@
-import { IonApp } from "@ionic/react";
+import { IonApp, setupConfig } from "@ionic/react";
 
 /* Theme variables */
 import "./theme/shared.scss";
@@ -9,6 +9,10 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 
 import { persistor, store } from "./stores";
+
+setupConfig({
+  backButtonText: "",
+});
 
 const App: React.FC = () => (
   <Provider store={store}>

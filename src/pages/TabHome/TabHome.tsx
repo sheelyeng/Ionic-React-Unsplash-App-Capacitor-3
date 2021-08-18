@@ -8,6 +8,7 @@ import {
   IonRefresherContent,
   IonTitle,
   IonToolbar,
+  useIonRouter,
 } from "@ionic/react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -28,6 +29,7 @@ import "./TabHome.scss";
 
 const TabHome: React.FC = () => {
   const fakePhotosArr = loadFakeData();
+  const router = useIonRouter();
   const [activeTab, setActiveTab] = useState("0");
   const [photosPage, setPhotosPage] = useState(1);
   const [topicsPage, setTopicsPage] = useState(1);
@@ -71,13 +73,15 @@ const TabHome: React.FC = () => {
 
   const onImagePress = (id: string) => {};
 
-  const onViewAllPress = () => {};
+  const onViewAllPress = () => {
+    router.push("/main/topics");
+  };
 
   const onTopicPress = (id_or_slug: string) => {};
 
   const renderEditorial = () => (
     <>
-      <AppHomeCategoriesHeader />
+      <AppHomeCategoriesHeader onViewAllPress={onViewAllPress} />
       <AppHomeCategories
         showLoading={isLoadingTopics}
         topics={TopicsArr}

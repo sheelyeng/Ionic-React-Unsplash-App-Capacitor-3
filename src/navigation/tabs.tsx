@@ -24,9 +24,11 @@ import TabCollections from "../pages/TabCollections/TabCollections";
 import TabSearch from "../pages/TabSearch/TabSearch";
 import TabAccount from "../pages/TabAccount/TabAccount";
 
+import "./tabs.scss";
+
 export default function Tabs() {
   return (
-    <IonTabs>
+    <IonTabs className="Tabs">
       <IonRouterOutlet>
         <Route exact path="/tabs/home">
           <TabHome />
