@@ -7,6 +7,7 @@ import Landing from "../pages/Landing/Landing";
 import Tabs from "./tabs";
 import Topics from "../pages/Topics/Topics";
 import TopicDetail from "../pages/TopicDetail/TopicDetail";
+import UserProfile from "../pages/UserProfile/UserProfile";
 
 export default function Router() {
   return (
@@ -23,6 +24,9 @@ export default function Router() {
         </Route>
         <Route path="/main/topic-details">
           <TopicDetail />
+        </Route>
+        <Route path="/main/user-profile">
+          <UserProfile />
         </Route>
         <Route exact path="/">
           <Redirect to="/landing" />

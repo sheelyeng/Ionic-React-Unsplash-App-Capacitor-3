@@ -34,6 +34,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-photo-collage": "^1.0.9",
+    "react-photo-gallery": "^8.0.0",
     "react-photo-grid": "^1.4.11",
     "react-redux": "^7.2.4",
     "react-router": "^5.2.0",
@@ -87,7 +88,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "^3.1.2"
+    "@capacitor/cli": "^3.1.2",
+    "@types/lodash": "^4.14.172"
   },
   "description": "An Ionic project"
 }

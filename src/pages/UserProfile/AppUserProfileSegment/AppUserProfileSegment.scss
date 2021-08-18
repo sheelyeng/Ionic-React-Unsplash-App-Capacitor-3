@@ -1,0 +1,11 @@
+.AppUserProfileSegment {
+  ion-segment-button {
+    --color-checked: var(--ion-color-black);
+    --indicator-color: var(--ion-color-black);
+    text-transform: unset;
+
+    &.segment-button-checked {
+      font-weight: 500;
+    }
+  }
+}

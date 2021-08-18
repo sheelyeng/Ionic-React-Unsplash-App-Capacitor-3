@@ -1,0 +1,15 @@
+.AppSearchPhotos {
+  ion-col {
+    padding-inline-start: 1px;
+    padding-inline-end: 1px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .img-box {
+    width: 100%;
+    min-height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

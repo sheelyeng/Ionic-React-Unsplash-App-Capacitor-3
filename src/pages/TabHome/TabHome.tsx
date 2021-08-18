@@ -71,7 +71,11 @@ const TabHome: React.FC = () => {
     event.detail.complete();
   };
 
-  const onUserPress = (username: string) => {};
+  const onUserPress = (username: string) => {
+    navigate.push("/main/user-profile", {
+      username,
+    });
+  };
 
   const onImagePress = (id: string) => {};
 

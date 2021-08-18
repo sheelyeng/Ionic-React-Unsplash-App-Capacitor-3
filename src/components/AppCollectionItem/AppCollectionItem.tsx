@@ -27,20 +27,23 @@ const AppCollectionItem: React.FC<Props> = ({
   onPressImage,
   onPressTitle,
 }) => {
-  // const previewsArr: any = item?.preview_photos?.map((item: any) => {
-  //   return item?.urls.small;
-  // });
-  const previewsArr: any = item?.preview_photos?.map((item: any) => {
+  const getProps = () => {
+    let previewsArr: any[] = [];
+    if (item && item?.preview_photos) {
+      previewsArr = item?.preview_photos?.map((item: any) => {
+        return {
+          source: item?.urls.small,
+        };
+      });
+    }
+
     return {
-      source: item?.urls.small,
+      width: "100%",
+      height: ["250px", "120px"],
+      layout: [1, 3],
+      photos: previewsArr,
+      showNumOfRemainingPhotos: true,
     };
-  });
-  const setting = {
-    width: "100%",
-    height: ["250px", "120px"],
-    layout: [1, 3],
-    photos: previewsArr,
-    showNumOfRemainingPhotos: true,
   };
 
   return (
@@ -60,14 +63,7 @@ const AppCollectionItem: React.FC<Props> = ({
         </div>
       </IonItem>
       <div className="ImageContainer">
-        {/* {previewsArr && (
-          <ReactPhotoGrid
-            onImageClick={onPressImage}
-            data={previewsArr}
-            containerWidth={window.innerWidth}
-          />
-        )} */}
-        <ReactPhotoCollage {...setting} />
+        {item && item?.preview_photos && <ReactPhotoCollage {...getProps()} />}
       </div>
     </IonCard>
   );

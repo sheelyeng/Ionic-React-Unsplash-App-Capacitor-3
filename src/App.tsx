@@ -12,6 +12,7 @@ import { persistor, store } from "./stores";
 
 setupConfig({
   backButtonText: "",
+  rippleEffect: false,
 });
 
 const App: React.FC = () => (

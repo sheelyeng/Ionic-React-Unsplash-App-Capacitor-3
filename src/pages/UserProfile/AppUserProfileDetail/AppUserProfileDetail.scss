@@ -1,0 +1,32 @@
+.AppUserProfileDetail {
+  ion-avatar {
+    height: 60px;
+    width: 60px;
+    border: 0.5px solid #ddd;
+  }
+  ion-label {
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    p {
+      font-size: 14px;
+      color: #767676;
+    }
+  }
+
+  .TagsWrapper {
+    padding-top: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .ActionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    padding-bottom: 16px;
+  }
+}
