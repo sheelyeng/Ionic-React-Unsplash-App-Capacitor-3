@@ -14,6 +14,7 @@ interface Props {
 
 const slideOpts = {
   slidesPerView: 3.1,
+  spaceBetween: 10,
 };
 
 const AppHomeCategories: React.FC<Props> = ({

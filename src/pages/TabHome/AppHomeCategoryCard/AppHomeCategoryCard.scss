@@ -12,6 +12,18 @@
     padding: 2px;
     position: relative;
 
+    /* ----------- iPhone X ----------- */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+      width: 115px;
+      height: 160px;
+    }
+
+    /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+      width: 100px;
+      height: 145px;
+    }
+
     img {
       border-radius: 12px;
       height: 100%;
