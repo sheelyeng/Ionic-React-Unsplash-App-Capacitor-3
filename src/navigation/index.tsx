@@ -6,6 +6,7 @@ import { IonRouterOutlet } from "@ionic/react";
 import Landing from "../pages/Landing/Landing";
 import Tabs from "./tabs";
 import Topics from "../pages/Topics/Topics";
+import TopicDetail from "../pages/TopicDetail/TopicDetail";
 
 export default function Router() {
   return (
@@ -19,6 +20,9 @@ export default function Router() {
         </Route>
         <Route path="/main/topics">
           <Topics />
+        </Route>
+        <Route path="/main/topic-details">
+          <TopicDetail />
         </Route>
         <Route exact path="/">
           <Redirect to="/landing" />

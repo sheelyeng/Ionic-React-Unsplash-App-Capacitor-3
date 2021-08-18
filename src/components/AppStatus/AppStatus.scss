@@ -6,7 +6,11 @@
   align-items: center;
   height: 24px;
   width: 65px;
-  border-radius: 4px ;
+  border-radius: 4px;
+
+  p {
+    font-size: 13px;
+  }
 
   .FeatureStatus {
     width: 8px;

@@ -12,10 +12,10 @@ interface Props {
 const AppHomeCategoryCard: React.FC<Props> = ({ topic, onPress }) => {
   return (
     <div className="AppHomeCategoryCard">
-      <div className="ImageContainer">
+      <div className="ImageContainer" onClick={onPress}>
         <img src={topic?.cover_photo?.urls?.regular} alt="" />
         <div className="titleText">
-            <p>{topic?.title}</p>
+          <p>{topic?.title}</p>
         </div>
       </div>
     </div>

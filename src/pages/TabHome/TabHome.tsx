@@ -12,6 +12,7 @@ import {
 } from "@ionic/react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import { useHistory } from "react-router";
 import AppCardItem from "../../components/AppCardItem/AppCardItem";
 import AppHeaderLogo from "../../components/AppHeaderLogo/AppHeaderLogo";
 import { MAX_PER_PAGE } from "../../constants";
@@ -30,6 +31,7 @@ import "./TabHome.scss";
 const TabHome: React.FC = () => {
   const fakePhotosArr = loadFakeData();
   const router = useIonRouter();
+  const navigate = useHistory();
   const [activeTab, setActiveTab] = useState("0");
   const [photosPage, setPhotosPage] = useState(1);
   const [topicsPage, setTopicsPage] = useState(1);
@@ -77,7 +79,11 @@ const TabHome: React.FC = () => {
     router.push("/main/topics");
   };
 
-  const onTopicPress = (id_or_slug: string) => {};
+  const onTopicPress = (id_or_slug: string) => {
+    navigate.push("/main/topic-details", {
+      id_or_slug,
+    });
+  };
 
   const renderEditorial = () => (
     <>

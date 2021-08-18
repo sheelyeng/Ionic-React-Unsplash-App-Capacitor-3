@@ -10,9 +10,11 @@ import {
   IonRefresherContent,
   IonTitle,
   IonToolbar,
+  useIonRouter,
 } from "@ionic/react";
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { useHistory } from "react-router";
 import AppCardTopic from "../../components/AppCardTopic/AppCardTopic";
 import AppHeaderLogo from "../../components/AppHeaderLogo/AppHeaderLogo";
 import { MAX_PER_PAGE } from "../../constants";
@@ -25,6 +27,7 @@ import "./Topics.scss";
 
 const Topics: React.FC = () => {
   const dispatch = useAppDispatch();
+  const navigate = useHistory();
   const [refreshing, setRefreshing] = useState(false);
   const TopicsArr = useSelector(topicsSelectors.topics);
 
@@ -42,7 +45,11 @@ const Topics: React.FC = () => {
     event.detail.complete();
   };
 
-  const onTopicPress = (id_or_slug: string) => {};
+  const onTopicPress = (id_or_slug: string) => {
+    navigate.push("/main/topic-details", {
+      id_or_slug,
+    });
+  };
 
   const onUserPress = (username: string) => {};
 

@@ -1,0 +1,34 @@
+.TopicDetailStatus {
+  padding-top: 18px;
+  
+  ion-item {
+    ion-icon {
+      font-size: 20px;
+    }
+    ion-label {
+      font-size: 14px !important;
+      color: var(--ion-color-black) !important;
+    }
+  }
+
+  .textContribution {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--ion-color-black) !important;
+  }
+
+  .topicAvatar {
+    border: 0.5px solid #ddd;
+  }
+  .TopContributors {
+    .TopContributorsContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    ion-avatar {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
