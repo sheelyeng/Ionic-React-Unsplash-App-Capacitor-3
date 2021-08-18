@@ -1,4 +1,8 @@
 .Landing {
+  background: url("../../assets/img/landing-unsplash.jpg") center center fixed
+    no-repeat;
+  background-size: cover;
+
   ion-header {
     --background: transparent;
     ion-toolbar {
@@ -7,8 +11,7 @@
   }
 
   ion-content {
-    --background: url("../../assets/img/landing-unsplash.jpg") 0 0/100% 100%
-      no-repeat;
+    --background: transparent;
   }
 
   .SkipButton {
