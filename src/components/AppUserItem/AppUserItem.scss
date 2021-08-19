@@ -1,0 +1,21 @@
+.AppUserItem {
+  --padding-top: 5px;
+  --padding-bottom: 5px;
+
+  ion-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  ion-label {
+    h2 {
+      font-size: 15;
+      font-weight: 500;
+      color: var(--ion-color-black);
+    }
+    p {
+      font-size: 13;
+      color: "#767676";
+    }
+  }
+}
