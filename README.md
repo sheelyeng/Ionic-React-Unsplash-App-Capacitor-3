@@ -1,5 +1,7 @@
 # Unsplash App built with Ionic 5 with React JS and Capacitor 3
 
+![Screenshot](./video.gif)
+
 A Unsplash app build with Ionic 5, React JS and Capacitor 3
 
 ## Plugins Used
