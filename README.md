@@ -14,7 +14,7 @@ A Unsplash app build with Ionic 5, React JS and Capacitor 3
 
 ## Source URL
 
-- GitHub: https://github.com/sheelyeng/Ionic-React-Unsplash-App
+- GitHub: https://github.com/sheelyeng/Ionic-React-Unsplash-App-Capacitor-3
 
 ## Environment Variables
 
